@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/addCategory.do" method="post">
+    <p>
+        <label for="name">分类名称：</label>
+        <input type="text" name="name" id="name">
+    </p>
+    <p>
+        <label for="status">分类状态：</label>
+        <!-- 下拉框 -->
+        <select name="status" id="status">
+            <option value="1">开启</option>
+            <option value="0">关闭</option>
+        </select>
+    </p>
+    <p>
+        <label for="navable">导航状态：</label>
+        <!-- 下拉框 -->
+        <select name="navable" id="navable">
+            <option value="1">是</option>
+            <option value="0">否</option>
+        </select>
+    </p>
+    <p>
+        <label for="sort">分类顺序：</label>
+        <input type="text" name="sort" id="sort">
+    </p>
+    <p><input type="submit" value="新增分类"/></p>
+</form>
+</body>
+</html>
