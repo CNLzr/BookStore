@@ -33,7 +33,7 @@ public class CategoryAddServlet extends HttpServlet {
         Category category = new Category();
         category.setName(name);
         category.setStatus(status);
-        category.setNavable(navable);
+//        category.setNavable(navable);
         category.setSort(sort);
         flag = categoryService.addCategory(category);
         if(flag) {

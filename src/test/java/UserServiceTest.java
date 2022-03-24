@@ -22,7 +22,7 @@ public class UserServiceTest {
         user.setAvatar("abc");
         user.setScore(1);
         user.setRegtime(new Date());
-        user.setVcode("123456");
+//        user.setVcode("123456");
         user.setStatus("y");
         boolean rest = userService.addUser(user);
         if(rest){

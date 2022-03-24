@@ -17,4 +17,13 @@ public class UserDaoImpl implements UserDao {
         MybatisUtil.closeSqlSession();
         return flag;
     }
+
+    @Override
+    public User getByAccount(String account) {
+        SqlSession sqlSession = MybatisUtil.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user = userMapper.getByAccount(account);
+        MybatisUtil.closeSqlSession();
+        return user;
+    }
 }

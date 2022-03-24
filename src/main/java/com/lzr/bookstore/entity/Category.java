@@ -11,13 +11,7 @@ public class Category {
     private Integer id;
     private String name;
     private String status;
-    private String navable;
+//    private String navable;
     private String sort;
 
-    public Category(String name, String status, String navable, String sort) {
-        this.name = name;
-        this.status = status;
-        this.navable = navable;
-        this.sort = sort;
-    }
 }

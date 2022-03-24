@@ -20,7 +20,7 @@ public class User implements Serializable {
     private String avatar;    //头像
     private Integer score;
     private Date regtime;    //注册时间
-    private String vcode;    //验证码
+//    private String vcode;    //验证码
     private String status;    //状态
 
 }

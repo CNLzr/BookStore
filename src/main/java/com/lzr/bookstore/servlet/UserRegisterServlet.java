@@ -25,8 +25,7 @@ public class UserRegisterServlet extends HttpServlet {
         String account = req.getParameter("account");
         String password = req.getParameter("password");
         String email = req.getParameter("email");
-        String vcode = req.getParameter("vcode");
-        System.out.println(account + "," + password + "," + email + "," + vcode);
+//        String vcode = req.getParameter("vcode");
         User user = new User();
         user.setAccount(account);
         user.setPassword(password);
@@ -35,9 +34,9 @@ public class UserRegisterServlet extends HttpServlet {
         user.setAvatar("images/avator/user_ico.gif");
         user.setScore(0);
         user.setRegtime(new Date());
-        user.setVcode(vcode);
+//        user.setVcode(vcode);
         user.setStatus("n");
-        flag = userService.addUser(user);
+        flag = userService.registerAccount(user);
         if(flag){
             LOGGER.debug("--->注册成功");
             resp.sendRedirect("/index.html");

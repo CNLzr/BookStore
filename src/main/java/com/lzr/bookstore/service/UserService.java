@@ -9,4 +9,6 @@ public interface UserService {
      * @return 是否成功：true；成功，false：失败
      */
     boolean addUser(User user);
+    User getByAccount(String account);
+    boolean registerAccount(User user);
 }

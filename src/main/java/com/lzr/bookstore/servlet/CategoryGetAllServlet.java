@@ -28,7 +28,7 @@ public class CategoryGetAllServlet extends HttpServlet {
             out.print("<td>"+category.getId()+"</td>");
             out.print("<td>"+category.getName()+"</td>");
             out.print("<td>"+(category.getStatus().equals("y")?"正常":"停用")+"</td>");
-            out.print("<td>"+(category.getNavable().equals("y")?"是":"否")+"</td>");
+//            out.print("<td>"+(category.getNavable().equals("y")?"是":"否")+"</td>");
             out.print("<td>"+category.getSort()+"</td>");
             out.print("</tr>");
         }

@@ -78,8 +78,9 @@ button.hidefocus::-moz-focus-inner {
 	color: #666
 }
 
-.dark_gray { #3f3f3f
-	
+.dark_gray {
+	color: #3f3f3f;
+
 }
 
 .light_gray {
@@ -315,7 +316,7 @@ body.index {
 	height: 53px;
 	line-height: 53px;
 	text-indent: 9999px;
-	background: url(images/logo.jpg) no-repeat
+	background: url(images/logo.png) no-repeat
 }
 
 .header .shortcut {
@@ -339,7 +340,7 @@ body.index {
 	margin-right: 0;
 	padding: 0 0 0 19px;
 	background-position: 0 -16px;
-	_background-position: 0 -18px
+	background-position: 0 -18px;
 }
 
 .header .shortcut li a {
@@ -615,7 +616,7 @@ dl.cartlist dd.static input {
 
 .sortlist li.hover .sublist {
 	display: block;
-	background: #fff url(images/sublist_bg.gif) right 145 repeat-y;
+	background: #fff url(images/sublist_bg.gif) right 145px repeat-y;
 	_height: 35px
 }
 
@@ -1772,7 +1773,7 @@ a.btn_pay {
 	height: 32px;
 	border-bottom: 1px solid #c5c5c5;
 	font-weight: bold;
-	color: 3333;
+	color: #333333;
 	background: url(images/ucenter/list_table_thbg.gif) repeat-x
 }
 
@@ -3540,8 +3541,8 @@ span.sel {
 	height: 10px;
 	background: url(images/sprites_2.gif) -67px -305px no-repeat;
 	bottom: -1px\9;
-	_bottom: -3px;
-	_right: -2px
+	/*_bottom: -3px*/
+	/*_right: -2px*/
 }
 
 .summary .item a.disabled {
@@ -4810,7 +4811,7 @@ a.g_btn_2 {
 	width: 13px;
 	height: 8px;
 	background-position: -206px -265px;
-	_bottom: -15px
+	bottom: -15px;
 }
 
 .groupon .sidebar .box .cont {
